@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table {
+    font-family: Arial, sans-serif;
+     border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #760829;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fd0c70;
+}
+</style>
+<body>
+    <h2>Data Biodata Siswa PPLG</h2> 
+
+
+<table>
+  <tr>
+    <th>Field/Atribut:</th>
+    <th>Keterangan/Hasil input</th>
+  </tr>
+  <tr>
+    <td>Nama:</td>
+    <td>Zarifah Karennia Setya Putri</td>
+  <tr>
+    <td>Alamat:</td>
+    <td>Kalipareans</td>
+  </tr>
+  <tr>
+    <td>Jurusan:</td>
+    <td>RPL</td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin:</td>
+    <td>Perempuan</td>
+  </tr>
+  <tr>
+    <td>Tinggi Badan (cm):</td>
+    <td>157</td>
+  </tr>
+  <tr>
+    <td>Berat Badan (kg):</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Hobi:</td>
+    <td>Futsal</td>
+  </tr>
+  <tr>
+    <td>NO.Hp:</td>
+    <td>082313485849</td>
+  </tr>
+  <tr>
+    <td> Status: Data berhasil divalidasi</td>
+    <td> dan direkap ke dalam tabel</td>
+  </tr>
+     
+</table>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  table { 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+
+tr:nth-child(even) {
+  background-color: #fd0c70;
+}
+</style>
+<body>
+  <h2>Marge & Split</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:25%;">Kategori Data</th>
+        <th style="width:30%;">Atribut Form</th>
+        <th style="width:45%;">Hasil Isian Siswa</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!--Rowspan 3 untuk Merge 3 Baris-->
+            <td rowspan="3" class="merge-cell">
+              IDENTITAS PRIBADI<br>
+              <span>(Merged 3 baris)</span>
+            </td>
+            <td>Nama:</td>
+            <td>Zarifah Karennia Setya Putri</td>
+          </tr>
+          <tr>
+            <td>Alamat:</td>
+            <td>Kalipareans</td>
+          </tr>
+          <tr>
+            <td>No.Hp:</td>
+            <td>082313485849</td>
+          </tr>
+          <tr>
+            <td>Akademik:</td>
+            <td>Jurusan:</td>
+            <td>RPL</td>
+          </tr>
+          <tr>
+            <td>Prefensi:</td>
+            <td>Jenis Kelamin:</td>
+            <td>Perempuan</td>
+          </tr>
+          <tr>
+            <td>Data Fisik</td>
+            <td>Pengukuran Badan:</td>
+          <td>
+            <!--Simulasi Split Cell menggunakan sub-tabel dalam border hijau -->
+            <div class="split-box
+              <table class="inner-table">
+                <tr>
+                  <td>Tinggi:157 cm</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Lain-Lain:</td>
+          <td>Hobi:</td>
+          <td>Futsal</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="legend">
+      </div>
+    </div>
+
+    </body>
+    </html>
